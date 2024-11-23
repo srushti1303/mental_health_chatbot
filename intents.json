@@ -1,0 +1,164 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hello",
+                "Hey there",
+                "Good morning",
+                "Good evening"
+            ],
+            "responses": [
+                "Hello! I'm here to provide compassionate mental health support. How are you feeling today?",
+                "Welcome. I'm a supportive listener ready to help you navigate your mental health journey.",
+                "Hi there! Your mental well-being is important. What would you like to discuss?"
+            ]
+        },
+        {
+            "tag": "loneliness",
+            "patterns": [
+                "I feel alone",
+                "I'm lonely",
+                "No one understands me",
+                "I feel isolated",
+                "Living abroad is tough"
+            ],
+            "responses": [
+                "Loneliness is a challenging emotion that many people experience. Your feelings are valid and important.",
+                "Living in a new country can intensify feelings of isolation. Would you like to explore some coping strategies?",
+                "It's okay to feel lonely. Let's discuss ways to build connections and support your mental health."
+            ]
+        },
+        {
+            "tag": "anxiety",
+            "patterns": [
+                "I'm feeling anxious",
+                "I have anxiety",
+                "I can't stop worrying",
+                "My anxiety is overwhelming",
+                "How do I manage anxiety?"
+            ],
+            "responses": [
+                "Anxiety is a common experience. There are many effective strategies to help manage and reduce anxiety.",
+                "I understand anxiety can feel overwhelming. Would you like to discuss some coping mechanisms?",
+                "Let's explore some techniques to help you manage your anxiety and improve your mental well-being."
+            ]
+        },
+        {
+            "tag": "depression",
+            "patterns": [
+                "I feel depressed",
+                "I'm struggling with depression",
+                "I feel hopeless",
+                "Nothing makes me happy",
+                "I don't want to do anything"
+            ],
+            "responses": [
+                "Depression is a serious condition, and your feelings are valid. Professional support can make a significant difference.",
+                "I hear that you're going through a difficult time. Would you like to discuss ways to support your mental health?",
+                "Living with depression is challenging. There are multiple strategies and resources available to help you."
+            ]
+        },
+        {
+            "tag": "stress_management",
+            "patterns": [
+                "How to manage stress",
+                "I'm stressed",
+                "Work is overwhelming",
+                "I can't handle my stress",
+                "Stress management techniques"
+            ],
+            "responses": [
+                "Stress management is crucial for mental and physical well-being. Let's explore some effective techniques.",
+                "There are multiple strategies to help you cope with and reduce stress. Would you like to learn about them?",
+                "Managing stress involves understanding your triggers and developing healthy coping mechanisms."
+            ]
+        },
+        {
+            "tag": "self_care",
+            "patterns": [
+                "Self-care tips",
+                "How to take care of myself",
+                "Mental health self-care",
+                "I need to improve my well-being"
+            ],
+            "responses": [
+                "Self-care is essential for maintaining good mental health. I can suggest personalized strategies.",
+                "Taking care of yourself involves physical, emotional, and mental practices. Let's discuss some approaches.",
+                "Developing a self-care routine can significantly improve your overall well-being and resilience."
+            ]
+        },
+        {
+            "tag": "mental_health_resources",
+            "patterns": [
+                "Mental health support",
+                "Where to get help",
+                "I need professional support",
+                "Counseling resources",
+                "Mental health hotlines"
+            ],
+            "responses": [
+                "There are numerous mental health resources available both online and locally. I can help you find appropriate support.",
+                "Professional support can be crucial in managing mental health challenges. Let's explore your options.",
+                "I can provide information on counseling services, support groups, and mental health professionals."
+            ]
+        },
+        {
+            "tag": "relationship_support",
+            "patterns": [
+                "Relationship problems",
+                "I'm struggling with relationships",
+                "Loneliness in relationships",
+                "Communication issues"
+            ],
+            "responses": [
+                "Relationship challenges can significantly impact mental health. Let's discuss strategies for support.",
+                "Healthy relationships are important for emotional well-being. I can offer guidance on communication and connection.",
+                "Understanding relationship dynamics can help improve your mental health and personal connections."
+            ]
+        },
+        {
+            "tag": "cultural_adjustment",
+            "patterns": [
+                "Cultural shock",
+                "Adjusting to new country",
+                "Feeling out of place",
+                "Culture shock symptoms"
+            ],
+            "responses": [
+                "Cultural adjustment can be emotionally challenging. Your feelings are normal and valid.",
+                "Moving to a new country involves significant emotional and psychological transitions. Let's discuss coping strategies.",
+                "Cultural adaptation takes time. I can help you navigate the emotional aspects of this experience."
+            ]
+        },
+        {
+            "tag": "professional_help",
+            "patterns": [
+                "Do I need therapy?",
+                "When to seek professional help",
+                "Signs I should see a counselor",
+                "Mental health diagnosis"
+            ],
+            "responses": [
+                "Recognizing when to seek professional help is a sign of strength, not weakness.",
+                "Professional mental health support can provide valuable tools and strategies for managing various challenges.",
+                "I can help you understand the signs that indicate it might be beneficial to consult a mental health professional."
+            ]
+        },
+        {
+            "tag": "coping_mechanisms",
+            "patterns": [
+                "Coping strategies",
+                "How to deal with emotional pain",
+                "Healthy coping methods",
+                "Managing difficult emotions"
+            ],
+            "responses": [
+                "Developing healthy coping mechanisms is crucial for emotional resilience and well-being.",
+                "There are multiple strategies to help you manage and process difficult emotions constructively.",
+                "I can suggest evidence-based coping techniques tailored to your specific emotional challenges."
+            ]
+        }
+    ]
+}

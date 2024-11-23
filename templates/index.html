@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MindSpace - Mental Health Support</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+        }
+        .chat-container {
+            max-height: 70vh;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #fda085 transparent;
+        }
+        .message-bot {
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+        }
+        .message-user {
+            background: linear-gradient(to right, #e0e7ff, #f3e7e9);
+            color: #333;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-md bg-white rounded-xl shadow-2xl overflow-hidden">
+        <!-- Header -->
+        <div class="bg-gradient-to-r from-purple-500 to-pink-500 p-4 text-center">
+            <h1 class="text-2xl font-bold text-white">MindSpace</h1>
+            <p class="text-sm text-white opacity-75">Your Mental Health Companion</p>
+        </div>
+
+        <!-- Chat Container -->
+        <div id="chat-container" class="chat-container p-4 space-y-4 h-96 overflow-y-auto">
+            <!-- Welcome Message -->
+            <div class="message-bot p-3 rounded-lg self-start max-w-xs">
+                Hi there! I'm here to support your mental health journey. How are you feeling today?
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="p-4 bg-gray-100 flex items-center">
+            <input 
+                type="text" 
+                id="user-input" 
+                placeholder="Type your message..." 
+                class="flex-grow p-2 rounded-l-lg border-2 border-purple-300 focus:outline-none focus:border-purple-500"
+            >
+            <button 
+                id="send-btn" 
+                class="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-2 rounded-r-lg hover:opacity-90 transition"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const chatContainer = document.getElementById('chat-container');
+        const userInput = document.getElementById('user-input');
+        const sendBtn = document.getElementById('send-btn');
+
+        sendBtn.addEventListener('click', sendMessage);
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+
+        function sendMessage() {
+            const message = userInput.value;
+            if (!message) return;
+
+            addMessageToChat('user', message);
+            userInput.value = '';
+
+            axios.post('/get_response', { message })
+                .then(response => {
+                    addMessageToChat('bot', response.data.response);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+
+        function addMessageToChat(sender, message) {
+            const messageElement = document.createElement('div');
+            messageElement.textContent = `${sender === 'user' ? 'You' : 'Bot'}: ${message}`;
+            messageElement.style.padding = '10px';
+            messageElement.style.backgroundColor = sender === 'user' ? '#f0f0f0' : '#e6f2ff';
+            chatContainer.appendChild(messageElement);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+    </script>
+</body>
+</html>

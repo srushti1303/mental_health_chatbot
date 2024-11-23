@@ -1,0 +1,56 @@
+{
+    "anxiety_resources": [
+        {
+            "type": "Online Counseling",
+            "name": "BetterHelp",
+            "description": "Online therapy platform with licensed counselors specializing in anxiety management",
+            "website": "https://www.betterhelp.com"
+        },
+        {
+            "type": "Support Groups",
+            "name": "Anxiety and Depression Association of America",
+            "description": "Online and in-person support groups for anxiety management",
+            "website": "https://adaa.org/support-network"
+        },
+        {
+            "type": "Mobile Apps",
+            "name": "Calm",
+            "description": "Meditation and anxiety reduction app with guided exercises",
+            "website": "https://www.calm.com"
+        }
+    ],
+    "depression_resources": [
+        {
+            "type": "Professional Support",
+            "name": "National Suicide Prevention Lifeline",
+            "description": "24/7 support for individuals experiencing depression and mental health crisis",
+            "phone": "1-800-273-8255"
+        },
+        {
+            "type": "Online Therapy",
+            "name": "7 Cups",
+            "description": "Free online counseling and therapy for depression",
+            "website": "https://www.7cups.com"
+        },
+        {
+            "type": "Community Support",
+            "name": "NAMI",
+            "description": "National Alliance on Mental Illness - Support groups and resources",
+            "website": "https://www.nami.org"
+        }
+    ],
+    "stress_management_resources": [
+        {
+            "type": "Stress Reduction",
+            "name": "Headspace",
+            "description": "Meditation and mindfulness app for stress management",
+            "website": "https://www.headspace.com"
+        },
+        {
+            "type": "Professional Coaching",
+            "name": "Talkspace",
+            "description": "Online therapy platform with stress management specialists",
+            "website": "https://www.talkspace.com"
+        }
+    ]
+}

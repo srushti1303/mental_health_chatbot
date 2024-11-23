@@ -20,7 +20,7 @@ This project implements an AI-powered chatbot designed to provide mental health 
 - HTML/JavaScript for frontend
 - Transformers library for NLP models
 
-##🌟 Key Achievements
+🌟 Key Achievements
 
 Developed an AI-powered mental health support chatbot by implementing deep learning algorithms and natural language processing in Python
 Improved response accuracy by 85% as measured by user interaction metrics by training the model on diverse mental health scenarios and implementing contextual understanding
